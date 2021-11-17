@@ -4,7 +4,6 @@
     display: grid;
     min-height: 100vh;
     grid-template-columns: 5% repeat(2, 45%) 5%;
-    grid-template-rows: 10% 10% 20% 30% 10% 15% 5%;
     gap: 0px 0px;
     grid-template-areas:
         ". logo button ."
@@ -67,7 +66,6 @@ a.navigation--link {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 5% 10% repeat(2, 18% 8%) 18% 10% 5%;
-    grid-template-rows: 8% 12% 45% 5% 20% 5% 5%;
     gap: 0px 0px;
     grid-template-areas:
         ". logo . . . . button button ."
@@ -121,7 +119,7 @@ a.navigation--link {
     padding-left: 5%;
 }
 
-.button-big {
+.button_size-m {
     margin-left: 10%;
 }
 
@@ -179,6 +177,11 @@ a.navigation--link {
     line-height: 160%;
     text-align: left;
     text-decoration: none;
+    color: #5222D0;
+}
+
+#opportunities-navigation {
+    color: #000000;
 }
 
 .subscribe--emal {
@@ -191,27 +194,39 @@ a.navigation--link {
 }
 
 /*Оформление: кнопки =================================================================================================*/
-.button-big,
-.button-small {
+.button_size-s,
+.button_size-m,
+.button_size-l {
     outline: none;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 100px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     border: none;
     color: #ffffff;
+    text-transform: uppercase;
     background: #5222D0;
     box-shadow: 0px 4px 4px rgba(17, 8, 8, 0.25);
     margin: auto;
 }
 
-.button-small {
+.button_size-s {
+    width: 135px;
+    height: 38px;
     font-size: 0.875em;
 }
 
-.button-big {
-    font-size: 1.5em;
+.button_size-m {
+    width: 155px;
+    height: 38px;
+    font-size: 0.875em;
+}
+
+.button_size-l {
+    width: 270px;
+    height: 84px;
+    font-size: 2.1875em;
 }
 
 /*Оформление: картинки ===============================================================================================*/
@@ -225,6 +240,16 @@ a.navigation--link {
 
 .opportinities--img {
     max-width: 100%;
+}
+
+.button-icon {
+    height: 70%;
+    padding-left: 5px;
+}
+
+.button-bigicon {
+    height: 45%;
+    padding-left: 5px;
 }
 
 /*Оформление: все остальное ==========================================================================================*/
