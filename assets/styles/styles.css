@@ -194,9 +194,9 @@ a.navigation--link {
 }
 
 /*Оформление: кнопки =================================================================================================*/
-.button_size-s,
-.button_size-m,
-.button_size-l {
+.button-size-s,
+.button-size-m,
+.button-size-l {
     outline: none;
     padding: 10px 20px;
     border-radius: 100px;
@@ -211,19 +211,19 @@ a.navigation--link {
     margin: auto;
 }
 
-.button_size-s {
+.button-size-s {
     width: 135px;
     height: 38px;
     font-size: 0.875em;
 }
 
-.button_size-m {
+.button-size-m {
     width: 155px;
     height: 38px;
     font-size: 0.875em;
 }
 
-.button_size-l {
+.button-size-l {
     width: 270px;
     height: 84px;
     font-size: 2.1875em;
