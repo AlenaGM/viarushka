@@ -24,4 +24,4 @@ The task was to create a webpage using a given [Figma-layout] and following BEM 
 
    [ITGirlSchool]: <https://itgirlschool.com/en>
    [Figma-layout]: <https://www.figma.com/file/Furcf4cCqnxLTrNDjykGtg/VR_Colors>
-   [Viarushka]: <https://alenagm.github.io/Bootstrap-Exercise/>
+   [Viarushka]: <https://alenagm.github.io/Viarushka/>
