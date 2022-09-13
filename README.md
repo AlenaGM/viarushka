@@ -6,10 +6,12 @@ The task was to create a webpage using a given [Figma-layout] and following BEM 
 <br><br>
 
 ## Result
-<br>
+
+<br><br>
 <img width="45%" alt="screen capture" src="../main/assets/images/captureweb.jpeg">
 <img width="45%" alt="screen capture" src="../main/assets/images/capturefeatures.jpeg">
-<br>
+<br><br>
+
 ## Demo
 [Viarushka]
 
