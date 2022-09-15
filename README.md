@@ -1,6 +1,6 @@
 # Viarushka
 
-Viarushka is a training project built on week 8 of learning with [ITGirlSchool].
+Viarushka is a training project built on 8th week of learning with [ITGirlSchool].
 
 The task was to create a webpage using a given [Figma-layout] and following BEM methodology:
 <br><br>
