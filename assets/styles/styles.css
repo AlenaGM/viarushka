@@ -108,18 +108,18 @@ a.navigation--link {
 }
 
 /*Позиционирование: гриды; отстпупы-поля; выравнивание - Страница "Возможности" (то, что не вошло в предыд.)==========*/
-.opportunities {
+.features {
   display: grid;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 5% 10% repeat(2, 18% 8%) 18% 10% 5%;
-  gap: 0px 0px;
+  margin: 16px 0px;
   grid-template-areas:
     ". logo . . . . button button ."
-    ". . opportunities--title opportunities--title opportunities--title . . . ."
-    ". . opportunities--box1 . opportunities--box2 . opportunities--box3 . ."
+    ". . features--title features--title features--title . . . ."
+    ". . features--box1 . features--box2 . features--box3 . ."
     ". . . . . . . . ."
-    ". . opportunities--box4 . opportunities--box5 . opportunities--box6 . ."
+    ". . features--box4 . features--box5 . features--box6 . ."
     ". navigation navigation navigation navigation navigation navigation . ."
     ". . . . . . . . .";
 }
@@ -132,35 +132,35 @@ a.navigation--link {
   grid-area: button;
 }
 
-.opportunities--title {
-  grid-area: opportunities--title;
+.features--title {
+  grid-area: features--title;
   margin-top: 0px;
   margin-bottom: 0px;
   align-self: center;
 }
 
-.opportunities--box1 {
-  grid-area: opportunities--box1;
+.features--box1 {
+  grid-area: features--box1;
 }
 
-.opportunities--box2 {
-  grid-area: opportunities--box2;
+.features--box2 {
+  grid-area: features--box2;
 }
 
-.opportunities--box3 {
-  grid-area: opportunities--box3;
+.features--box3 {
+  grid-area: features--box3;
 }
 
-.opportunities--box4 {
-  grid-area: opportunities--box4;
+.features--box4 {
+  grid-area: features--box4;
 }
 
-.opportunities--box5 {
-  grid-area: opportunities--box5;
+.features--box5 {
+  grid-area: features--box5;
 }
 
-.opportunities--box6 {
-  grid-area: opportunities--box6;
+.features--box6 {
+  grid-area: features--box6;
   color: white;
   background-color: #ec615b;
   padding-left: 5%;
@@ -187,7 +187,7 @@ h1 {
   text-align: left;
 }
 
-h1.opportunities--title {
+h1.features--title {
   font-weight: 700;
   font-size: 2.625em;
 }
@@ -226,7 +226,7 @@ a.navigation--link {
   color: #5222d0;
 }
 
-#opportunities-navigation {
+#features-navigation {
   color: #000000;
 }
 
@@ -284,7 +284,7 @@ a.navigation--link {
   max-width: 100%;
 }
 
-.opportinities--img {
+.features--img {
   max-width: 100%;
 }
 
