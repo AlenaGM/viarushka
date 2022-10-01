@@ -175,6 +175,33 @@ a.navigation--link {
   align-self: end;
 }
 
+@media screen and (max-width: 1023px) {
+  .features {
+    display: grid;
+    min-height: 100vh;
+    display: grid;
+    gap: 0;
+    margin: 24px 0px;
+    grid-template-columns: 5% 44% 44% 5%;
+    grid-template-areas:
+      ". logo button ."
+      ". features--title features--title ."
+      ". features--box1 features--box2 ."
+      ". features--box3 features--box4 ."
+      ". features--box3 features--box5 ."
+      ". features--box6 features--box6 ."
+      ". navigation navigation .";
+  }
+
+  .features--box1,
+  .features--box3 {
+    margin-right: 24px;
+  }
+  .features--box6 {
+    padding: 5%;
+  }
+}
+
 /*Типографика ========================================================================================================*/
 h1 {
   font-family: "Roboto", sans-serif;
@@ -254,7 +281,6 @@ a.navigation--link {
   text-transform: uppercase;
   background: #5222d0;
   box-shadow: 0px 4px 4px rgba(17, 8, 8, 0.25);
-  margin: auto;
 }
 
 .button-size-s {
@@ -281,11 +307,11 @@ a.navigation--link {
 }
 
 .header--img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .features--img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .button-icon {
