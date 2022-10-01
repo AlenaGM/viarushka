@@ -78,10 +78,15 @@ a.navigation--link {
       ". . . .";
   }
 
-  .header--title {
+  .header--title,
+  .header--intro {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
+  }
+
+  .header--imagecontainer {
+    margin: 0px 24px;
   }
 
   .header--button {
