@@ -112,10 +112,10 @@ a.navigation--link {
   display: grid;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 5% 10% repeat(2, 18% 8%) 18% 10% 5%;
+  grid-template-columns: 5% 10% repeat(2, 24% 24px) 24% 10% 5%;
   margin: 16px 0px;
   grid-template-areas:
-    ". logo . . . . button button ."
+    ". logo . . . . button . ."
     ". . features--title features--title features--title . . . ."
     ". . features--box1 . features--box2 . features--box3 . ."
     ". . . . . . . . ."
@@ -182,7 +182,7 @@ a.navigation--link {
     display: grid;
     gap: 0;
     margin: 24px 0px;
-    grid-template-columns: 5% 44% 44% 5%;
+    grid-template-columns: 5% 45% 45% 5%;
     grid-template-areas:
       ". logo button ."
       ". features--title features--title ."
@@ -196,6 +196,35 @@ a.navigation--link {
   .features--box1,
   .features--box3 {
     margin-right: 24px;
+  }
+  .features--box6 {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .features {
+    display: grid;
+    min-height: 100vh;
+    display: grid;
+    gap: 0;
+    margin: 24px 0px;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-areas:
+      ". logo button ."
+      ". features--title features--title ."
+      ". features--box1 features--box1 ."
+      ". features--box2 features--box2 ."
+      ". features--box3 features--box3 ."
+      ". features--box4 features--box4 ."
+      ". features--box5 features--box5 ."
+      ". features--box6 features--box6 ."
+      ". navigation navigation .";
+  }
+
+  .features--box1,
+  .features--box3 {
+    margin-right: 0px;
   }
   .features--box6 {
     padding: 5%;
@@ -326,7 +355,7 @@ a.navigation--link {
 
 /*Оформление: все остальное ==========================================================================================*/
 .subscribe--emal {
-  width: 90%;
+  width: 85%;
   margin: 5% 5% 5% 0%;
   padding-top: 10px;
   padding-bottom: 10px;
