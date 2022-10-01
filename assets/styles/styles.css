@@ -64,7 +64,7 @@ a.navigation--link {
   .header {
     display: grid;
     min-height: 100vh;
-    margin-top: 12px;
+    margin: 16px 0px;
     grid-template-columns: 5% repeat(2, 45%) 5%;
     gap: 0px 0px;
     grid-template-areas:
@@ -178,7 +178,7 @@ h1 {
   line-height: 140%;
   letter-spacing: 0.02em;
   font-weight: 900;
-  font-size: 3.375em;
+  font-size: 3.375rem;
   text-align: left;
 }
 
@@ -202,7 +202,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.25rem;
   line-height: 160%;
   text-align: left;
 }
@@ -216,7 +216,6 @@ a.navigation--link {
   font-style: normal;
   font-weight: 300;
   font-size: 1.25em;
-  line-height: 160%;
   text-align: left;
   text-decoration: none;
   color: #5222d0;
