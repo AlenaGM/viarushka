@@ -8,8 +8,8 @@ The task was to create a webpage using a provided [Figma layout] and following t
 ## Result
 
 <br><br>
-<img width="45%" alt="screen capture" src="../main/assets/images/captureweb.jpeg">
-<img width="45%" alt="screen capture" src="../main/assets/images/capturefeatures.jpeg">
+<img width="45%" alt="screen capture" src="../main/assets/images/captureweb.jpg">
+<img width="45%" alt="screen capture" src="../main/assets/images/capturefeatures.jpg">
 <br><br>
 
 ## Demo
