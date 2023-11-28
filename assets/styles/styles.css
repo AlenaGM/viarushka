@@ -1,363 +1,318 @@
-/*Positioning - Homepage ============================================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@400;900&display=swap");
+body {
+  min-width: 350px;
+}
+/* Layout ==================================== */
+.wrapper {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 1rem 0;
+  grid-template-columns: minmax(1rem, 1fr) minmax(auto, 1200px) minmax(
+      1rem,
+      1fr
+    );
+  grid-template-rows: minmax(64px, auto) 1fr minmax(64px, auto);
+  grid-template-areas:
+    ".header."
+    ".main."
+    ".footer.";
+}
 
 .header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  margin-bottom: 80px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Header Section ============================ */
+.header {
   display: grid;
-  min-height: 100vh;
-  grid-template-columns: 5% repeat(2, 45%) 5%;
-  gap: 0px 0px;
-  grid-template-areas:
-    ". logo button ."
-    ". . . ."
-    ". header--title header--imagecontainer ."
-    ". header--intro header--imagecontainer ."
-    ". header--button header--imagecontainer ."
-    ". navigation navigation ."
-    ". . . .";
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
-.logo {
-  grid-area: logo;
-  align-self: end;
-}
-
-.button {
-  justify-self: end;
-  align-self: end;
-}
-
-.header--title {
-  grid-area: header--title;
-  padding-left: 10%;
-  padding-right: 10%;
-  align-self: center;
-}
-
-.header--intro {
-  grid-area: header--intro;
-  padding-left: 10%;
-  padding-right: 10%;
-  align-content: center;
+.header--logo {
+  display: flex;
+  max-width: 200px;
 }
 
 .header--button {
-  grid-area: header--button;
-  padding-left: 10%;
-}
-
-.header--imagecontainer {
-  grid-area: header--imagecontainer;
-  margin-top: -5%;
-}
-
-.navigation {
-  grid-area: navigation;
-  align-self: end;
-  margin-left: 3%;
-}
-
-a.navigation--link {
-  padding-left: 2%;
-  padding-right: 2%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 1023px) {
-  .header {
-    display: grid;
-    min-height: 100vh;
-    margin: 16px 0px;
-    grid-template-columns: 5% repeat(2, 45%) 5%;
-    gap: 0px 0px;
-    grid-template-areas:
-      ". logo button ."
-      ". . . ."
-      ". header--title header--title ."
-      ". header--imagecontainer header--imagecontainer ."
-      ". header--intro header--intro ."
-      ". header--button  header--button ."
-      ". navigation navigation ."
-      ". . . .";
+  .header--logo {
+    max-width: 115px;
+  }
+}
+
+/* Footer Section ============================ */
+.footer {
+  display: grid;
+  align-items: center;
+}
+
+.navigation--link {
+  margin-right: 2rem;
+}
+
+/* Main Section on Index Page ================ */
+.index {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 64px;
+  align-items: center;
+  justify-content: center;
+}
+
+.index--content {
+  display: grid;
+  justify-items: start;
+}
+
+.index--image {
+  display: grid;
+  max-width: 600px;
+}
+
+.index--image img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.index--title {
+  margin-bottom: 40px;
+}
+
+.index--intro {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1023px) {
+  .index {
+    justify-items: center;
   }
 
-  .header--title,
-  .header--intro {
-    padding-left: 0;
-    padding-right: 0;
+  .index--content {
+    grid-row: 2;
+    justify-items: center;
+  }
+
+  .index--title {
+    margin-bottom: 20px;
+  }
+
+  .index--image {
+    grid-row: 1;
+  }
+
+  .index--intro {
     text-align: center;
   }
-
-  .header--imagecontainer {
-    margin: 0px 24px;
-  }
-
-  .header--button {
-    display: flex;
-    padding-left: 0;
-    justify-content: center;
-  }
-
-  .navigation {
-    margin-left: 3%;
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-  }
-
-  .button {
-    align-self: start;
-  }
 }
 
-/* Positioning - Features page ==========*/
-.features {
+/* Main section on Features page ============= */
+.features--container {
   display: grid;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 5% 10% repeat(2, 24% 24px) 24% 10% 5%;
-  margin: 16px 0px;
-  grid-template-areas:
-    ". logo . . . . button . ."
-    ". . features--title features--title features--title . . . ."
-    ". . features--box1 . features--box2 . features--box3 . ."
-    ". . . . . . . . ."
-    ". . features--box4 . features--box5 . features--box6 . ."
-    ". navigation navigation navigation navigation navigation navigation . ."
-    ". . . . . . . . .";
-}
-
-.logo {
-  grid-area: logo;
-}
-
-.button {
-  grid-area: button;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 42px 84px;
 }
 
 .features--title {
-  grid-area: features--title;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  align-self: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 
-.features--box1 {
-  grid-area: features--box1;
+.item--image {
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  margin-bottom: 24px;
 }
 
-.features--box2 {
-  grid-area: features--box2;
+.item--title {
+  margin-bottom: 10px;
 }
 
-.features--box3 {
-  grid-area: features--box3;
+.item--text {
+  margin-bottom: 24px;
 }
 
-.features--box4 {
-  grid-area: features--box4;
-}
-
-.features--box5 {
-  grid-area: features--box5;
-}
-
-.features--box6 {
-  grid-area: features--box6;
-  color: white;
+.item-bgcolor-red {
   background-color: #ec615b;
-  padding-left: 5%;
+  padding: 24px 18px;
+  margin-top: -21px;
 }
 
-.button_size-m {
-  margin-left: 10%;
+.subscribe {
+  display: flex;
+  flex-direction: column;
 }
 
-.navigation {
-  grid-area: navigation;
-  align-self: end;
+.subscribe--emal {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+  margin-bottom: 24px;
+  padding: 8px 14px;
 }
 
 @media screen and (max-width: 1023px) {
-  .features {
-    display: grid;
-    min-height: 100vh;
-    display: grid;
-    gap: 0;
-    margin: 24px 0px;
-    grid-template-columns: 5% 45% 45% 5%;
-    grid-template-areas:
-      ". logo button ."
-      ". features--title features--title ."
-      ". features--box1 features--box2 ."
-      ". features--box3 features--box4 ."
-      ". features--box3 features--box5 ."
-      ". features--box6 features--box6 ."
-      ". navigation navigation .";
+  .features--title {
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
-  .features--box1,
-  .features--box3 {
-    margin-right: 24px;
-  }
-  .features--box6 {
-    padding: 5%;
+  .features--container {
+    gap: 21px 42px;
   }
 }
-
-@media screen and (max-width: 750px) {
-  .features {
-    display: grid;
-    min-height: 100vh;
-    display: grid;
-    gap: 0;
-    margin: 24px 0px;
-    grid-template-columns: 5% 45% 45% 5%;
-    grid-template-areas:
-      ". logo button ."
-      ". features--title features--title ."
-      ". features--box1 features--box1 ."
-      ". features--box2 features--box2 ."
-      ". features--box3 features--box3 ."
-      ". features--box4 features--box4 ."
-      ". features--box5 features--box5 ."
-      ". features--box6 features--box6 ."
-      ". navigation navigation .";
-  }
-
-  .features--box1,
-  .features--box3 {
-    margin-right: 0px;
-  }
-  .features--box6 {
-    padding: 5%;
-  }
-}
-
-/*Typography ========================================================================================================*/
-h1 {
+/* Button ==================================== */
+.button {
   font-family: "Roboto", sans-serif;
+  font-size: 13px;
   font-style: normal;
-  text-transform: uppercase;
-  line-height: 140%;
-  letter-spacing: 0.02em;
-  font-weight: 900;
-  font-size: 3.375rem;
-  text-align: left;
-}
-
-h1.features--title {
-  font-weight: 700;
-  font-size: 2.625em;
-}
-
-h2 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.5em;
-  text-align: left;
-  margin-top: 5%;
-  margin-bottom: 0px;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.25rem;
-  line-height: 160%;
-  text-align: left;
-}
-
-p.header--intro {
-  font-size: 1.875em;
-}
-
-a.navigation--link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.25em;
-  text-align: left;
-  text-decoration: none;
-  color: #5222d0;
-}
-
-#features-navigation {
-  color: #000000;
-}
-
-.subscribe--emal {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 160%;
-  text-align: left;
-}
-
-/*Decoration: buttons =================================================================================================*/
-.button-size-s,
-.button-size-m,
-.button-size-l {
-  outline: none;
-  padding: 10px 20px;
-  border-radius: 100px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  border: none;
-  color: #ffffff;
+  font-weight: 400;
+  line-height: normal;
   text-transform: uppercase;
   background: #5222d0;
   box-shadow: 0px 4px 4px rgba(17, 8, 8, 0.25);
-}
-
-.button-size-s {
-  width: 135px;
-  height: 38px;
-  font-size: 0.875em;
+  border: none;
+  color: #fff;
+  outline: none;
+  padding: 11px 16px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  min-width: 115px;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 .button-size-m {
-  width: 155px;
-  height: 38px;
-  font-size: 0.875em;
+  min-width: 135px;
 }
 
 .button-size-l {
-  width: 270px;
-  height: 84px;
-  font-size: 2.1875em;
+  padding: 21px 32px;
+  font-size: 35px;
+  min-width: 270px;
+  gap: 10px;
 }
 
-/*Decoration: images ===============================================================================================*/
-.logo--img {
+.button:hover {
+  background-color: #ec615b;
+  transition: background-color 0.4s;
+}
+
+.button-size-m:hover {
+  background-color: #fff;
+  color: #5222d0;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+@media screen and (max-width: 1023px) {
+  .button-size-l {
+    padding: 16px 28px;
+    font-size: 28px;
+    min-width: 240px;
+  }
+}
+
+/*Title ====================================== */
+.title {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 72px;
+  font-weight: 900;
+  font-size: 60px;
+  text-align: left;
+}
+
+.title-size-s {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.title-color-white {
+  color: #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  .title {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .title-size-s {
+    font-size: 26px;
+  }
+}
+
+/* Navigation ================================ */
+.navigation--link {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #5222d0;
+  line-height: 32px;
+  transition: color 0.4s;
+}
+
+.navigation--link-color-black {
+  color: #000;
+}
+
+.navigation--link:hover {
+  color: #ec615b;
+  transition: color 0.4s;
+}
+
+/* Typography ================================ */
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+  margin: 0;
+}
+
+img {
   max-width: 100%;
-}
-
-.header--img {
-  width: 100%;
-}
-
-.features--img {
-  width: 100%;
-}
-
-.button-icon {
-  height: 70%;
-  padding-left: 5px;
-}
-
-.button-bigicon {
-  height: 45%;
-  padding-left: 5px;
-}
-
-/*Decoration: other ==========================================================================================*/
-.subscribe--emal {
-  width: 85%;
-  margin: 5% 5% 5% 0%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
 }

@@ -6,130 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Viarushka</title>
     <link rel="shortcut icon" href="assets/images/sign.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/styles.css" />
   </head>
   <body>
-    <div class="features">
-      <div class="logo">
-        <a class="navigation--link" href="index.html">
-          <img
-            class="logo--img"
-            src="assets/images/logo.png"
-            alt="company logo"
-          />
-        </a>
-      </div>
-      <div class="button">
-        <button class="button-size-s">
-          Cart
-          <img
-            class="button-icon"
-            src="assets/images/shopping-cart-icon.png"
-            alt="shapping cart icon"
-          />
-        </button>
-      </div>
-
-      <h1 class="features--title">Features</h1>
-      <div class="features--box1">
-        <div class="innerbox">
-          <img
-            class="features--img"
-            src="assets/images/features-1.png"
-            alt="scientist"
-          />
-          <h2>No wires</h2>
-          <p>
-            Headset works without wires. No need for computer, external power
-            supply or large space to place trackers.
-          </p>
-        </div>
-      </div>
-      <div class="features--box2">
-        <div class="innerbox">
-          <img
-            class="features--img"
-            src="assets/images/features-2.png"
-            alt="robot"
-          />
-          <h2>Without a computer</h2>
-          <p>
-            Modern VR headsets need a powerful computer to run games. Our
-            headset launches games from the cloud, so just enjoy.
-          </p>
-        </div>
-      </div>
-      <div class="features--box3">
-        <div class="innerbox">
-          <img
-            class="features--img"
-            src="assets/images/features-3.png"
-            alt="person working on laptop"
-          />
-          <h2>Up to 10 hours without charge</h2>
-          <p>
-            Despite its small size and high performance, the headset can work up
-            to 10 hours — even if you play the most resource-intensive games.
-          </p>
-        </div>
-      </div>
-      <div class="features--box4">
-        <div class="innerbox-small">
-          <h2>Hundreds of games</h2>
-          <p>
-            More than a hundred games are already available to you: from
-            high-budget AAA titles to small independent projects. And there'll
-            be more soon.
-          </p>
-        </div>
-      </div>
-      <div class="features--box5">
-        <div class="innerbox-small">
-          <h2>Give-away price</h2>
-          <p>
-            Compared to other VR Headsets, our costs much less. And you save a
-            lot on a powerful computer.
-          </p>
-        </div>
-      </div>
-      <div class="features--box6">
-        <div class="innerbox-small">
-          <h2>News</h2>
-          <form class="subscribe">
-            <input
-              class="subscribe--emal"
-              type="text"
-              placeholder="E-mail"
-              name="mail"
-              required
+    <div class="wrapper">
+      <header class="header">
+        <div class="header--logo logo">
+          <a href="index.html">
+            <img
+              class="logo--img"
+              src="assets/images/logo.png"
+              alt="company logo"
             />
-            <div><button class="button-size-m">Subscribe</button></div>
-          </form>
+          </a>
         </div>
-      </div>
+        <div class="header--button">
+          <button class="button">
+            Cart
+            <img
+              class="button--icon"
+              src="assets/images/shopping-cart-icon.png"
+              alt="shapping cart icon"
+            />
+          </button>
+        </div>
+      </header>
+      <main class="main main--features features">
+        <h1 class="features--title title">Features</h1>
+        <div class="features--container">
+          <section class="features--item item">
+            <img
+              class="item--image"
+              src="assets/images/features-1.png"
+              alt="scientist"
+            />
+            <h2 class="item--title title title-size-s">No wires</h2>
+            <p class="item--text">
+              Headset works without wires. No need for computer, external power
+              supply or large space to place trackers.
+            </p>
+          </section>
 
-      <nav class="navigation">
-        <a
-          class="navigation--link"
-          id="features-navigation"
-          href="features.html"
-          >Features</a
-        >
-        <a class="navigation--link" id="features-navigation" href="#"
-          >Where to buy</a
-        >
-        <a class="navigation--link" id="features-navigation" href="#"
-          >Delivery</a
-        >
-        <a class="navigation--link" id="features-navigation" href="#">Help</a>
-      </nav>
+          <section class="features--item item">
+            <img
+              class="item--image"
+              src="assets/images/features-2.png"
+              alt="robot"
+            />
+            <h2 class="item--title title title-size-s">Without a computer</h2>
+            <p class="item--text">
+              Modern VR headsets need a powerful computer to run games. Our
+              headset launches games from the cloud, so just enjoy.
+            </p>
+          </section>
+
+          <section class="features--item item">
+            <img
+              class="item--image"
+              src="assets/images/features-3.png"
+              alt="person working on laptop"
+            />
+            <h2 class="item--title title title-size-s">
+              Up to 10 hours without charge
+            </h2>
+            <p class="item--text">
+              Despite its small size and high performance, the headset can work
+              up to 10 hours — even if you play the most resource-intensive
+              games.
+            </p>
+          </section>
+
+          <section class="features--item item">
+            <h2 class="item--title title title-size-s">Hundreds of games</h2>
+            <p class="item--text">
+              More than a hundred games are already available to you: from
+              high-budget AAA titles to small independent projects. And there'll
+              be more soon.
+            </p>
+          </section>
+
+          <section class="features--item item">
+            <h2 class="item--title title title-size-s">Give-away price</h2>
+            <p class="item--text">
+              Compared to other VR Headsets, our costs much less. And you save a
+              lot on a powerful computer.
+            </p>
+          </section>
+
+          <section class="features--item item item-bgcolor-red">
+            <h2 class="item--title title title-size-s title-color-white">
+              News
+            </h2>
+            <form class="features--subscribe subscribe">
+              <input
+                class="subscribe--emal"
+                type="text"
+                placeholder="E-mail"
+                name="mail"
+                required
+              />
+              <div>
+                <button class="subscribe--button button button-size-m">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <nav class="footer--navigation navigation">
+          <a
+            class="navigation--link navigation--link-color-black"
+            href="features.html"
+            >Features</a
+          >
+          <a class="navigation--link navigation--link-color-black" href="#"
+            >Where to buy</a
+          >
+          <a class="navigation--link navigation--link-color-black" href="#"
+            >Delivery</a
+          >
+          <a class="navigation--link navigation--link-color-black" href="#"
+            >Help</a
+          >
+        </nav>
+      </footer>
     </div>
   </body>
 </html>
